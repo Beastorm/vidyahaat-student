@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">Vidyahaat</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="pref_file">pref_file</string>
+    <string name="time_stamp">time</string>
+    <string name="full_name">full_name</string>
+    <string name="form_filled">form_filled</string>
+    <string name="sign_up_method">sign_up_method</string>
+    <string name="otp">otp</string>
+    <string name="verified">verified</string>
+    <string name="mobile_no">mobile</string>
+    <string name="url">url</string>
+    <string name="study_in">study_in</string>
+    <string name="college_or_school_name">college_nanme</string>
+    <string name="flat_no">flat_no</string>
+    <string name="locality">locality</string>
+    <string name="city">city</string>
+    <string name="state">state</string>
+    <string name="pin">pin</string>
+    <string name="login_status">status</string>
+    <string name="student_id">id</string>
+    <string name="email">email</string>
+    <string name="address">address</string>
+    <string name="class_id">id</string>
+    <string name="type">type</string>
+    <string name="about">about</string>
+    <string name="title_activity_play_video_content">PlayVideoContentActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="pwd">pwd</string>
+    <string name="agora_app_id">354ebaee354540528ff48f1535f5eb24</string>
+    <string name="std_id">std_id</string>
+    <string name="pan">pan</string>
+    <string name="pan_type">type</string>
+</resources>

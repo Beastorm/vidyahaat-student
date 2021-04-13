@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/messageFragment"
+        android:name="com.vidyahaat.fragments.MessageFragment"
+        android:label="Message"
+        tools:layout="@layout/fragment_message" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.vidyahaat.fragments.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_profileFragment_to_bankDetailsFragment"
+            app:destination="@id/bankDetailsFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_editPanCardNumberFragment"
+            app:destination="@id/editPanCardNumberFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.vidyahaat.fragments.HomeFragment"
+        android:label="Vidyahaat"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_chapterFragment"
+            app:destination="@id/chapterFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_assignmentFragment"
+            app:destination="@id/assignmentFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_testQuestionsFragment"
+            app:destination="@id/testQuestionsFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_mockTestDetailsFragment"
+            app:destination="@id/mockTestDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/chapterFragment"
+        android:name="com.vidyahaat.fragments.ChapterFragment"
+        android:label="chapters"
+        tools:layout="@layout/fragment_chapter">
+        <argument
+            android:name="id"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_chapterFragment_to_courseFragment"
+            app:destination="@id/courseFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/courseFragment"
+        android:name="com.vidyahaat.fragments.CourseFragment"
+        android:label="courses"
+        tools:layout="@layout/fragment_course" >
+        <action
+            android:id="@+id/action_courseFragment_to_courseDetailsFragment"
+            app:destination="@id/courseDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/courseDetailsFragment"
+        android:name="com.vidyahaat.fragments.CourseDetailsFragment"
+        android:label="Course Detail"
+        tools:layout="@layout/fragment_course_details" >
+        <action
+            android:id="@+id/action_courseDetailsFragment_to_assignmentFragment"
+            app:destination="@id/assignmentFragment" />
+        <action
+            android:id="@+id/action_courseDetailsFragment_to_testQuestionsFragment"
+            app:destination="@id/testQuestionsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/assignmentFragment"
+        android:name="com.vidyahaat.fragments.AssignmentFragment"
+        android:label="Assignment"
+        tools:layout="@layout/fragment_assignment">
+        <action
+            android:id="@+id/action_assignmentFragment_to_addAssignmentFragment"
+            app:destination="@id/addAssignmentFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addAssignmentFragment"
+        android:name="com.vidyahaat.fragments.AddAssignmentFragment"
+        android:label="Upload Assignment"
+        tools:layout="@layout/fragment_add_assignment" />
+    <fragment
+        android:id="@+id/testQuestionsFragment"
+        android:name="com.vidyahaat.fragments.TestQuestionsFragment"
+        android:label="Test"
+        tools:layout="@layout/fragment_test_questions" />
+    <activity
+        android:id="@+id/testResultActivity"
+        android:name="com.vidyahaat.fragments.TestResultActivity"
+        android:label="TestResultActivity" />
+    <fragment
+        android:id="@+id/othersInfoFragment"
+        android:name="com.vidyahaat.fragments.OthersInfoFragment"
+        android:label="fragment_others_info"
+        tools:layout="@layout/fragment_others_info" />
+    <fragment
+        android:id="@+id/signUpFragment2"
+        android:name="com.vidyahaat.fragments.SignUpFragment"
+        android:label="SignUpFragment" >
+        <action
+            android:id="@+id/action_signUpFragment2_to_othersInfoFragment"
+            app:destination="@id/othersInfoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/testPerformanceFragment"
+        android:name="com.vidyahaat.fragments.TestPerformanceFragment"
+        android:label="Test Performance"
+        tools:layout="@layout/fragment_test_performance" />
+    <fragment
+        android:id="@+id/editAddressFragment"
+        android:name="com.vidyahaat.fragments.EditAddressFragment"
+        android:label="Edit Address" />
+    <fragment
+        android:id="@+id/changePasswordFragment"
+        android:name="com.vidyahaat.fragments.ChangePasswordFragment"
+        android:label="Change Password"
+        tools:layout="@layout/fragment_change_password" />
+    <fragment
+        android:id="@+id/mockTestDetailsFragment"
+        android:name="com.vidyahaat.fragments.MockTestDetailsFragment"
+        android:label="Mock Deatils"
+        tools:layout="@layout/fragment_mock_test_details" >
+        <action
+            android:id="@+id/action_mockTestDetailsFragment_to_paymentFragment"
+            app:destination="@id/paymentFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/bankDetailsFragment"
+        android:name="com.vidyahaat.fragments.BankDetailsFragment"
+        android:label="Bank Details"
+        tools:layout="@layout/fragment_bank_details" />
+    <fragment
+        android:id="@+id/editPanCardNumberFragment"
+        android:name="com.vidyahaat.fragments.EditPanCardNumberFragment"
+        android:label="Edit Pan Details"
+        tools:layout="@layout/fragment_edit_pan_card_number" />
+    <fragment
+        android:id="@+id/paymentFragment"
+        android:name="com.vidyahaat.fragments.PaymentFragment"
+        android:label="Payment"
+        tools:layout="@layout/fragment_payment" />
+</navigation>

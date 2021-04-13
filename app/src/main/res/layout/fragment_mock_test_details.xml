@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.MockTestDetailsFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView39"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                android:text="Disclaimer"
+                android:textSize="22sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView40"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="32dp"
+                android:text="Quiz Name"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView39" />
+
+            <TextView
+                android:id="@+id/title_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Quiz One"
+                android:textSize="28sp"
+                app:layout_constraintStart_toStartOf="@+id/textView40"
+                app:layout_constraintTop_toBottomOf="@+id/textView40" />
+
+            <TextView
+                android:id="@+id/price_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginEnd="32dp"
+                android:background="@android:color/holo_green_light"
+                android:padding="4dp"
+                android:text="100/-"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="@+id/title_tv"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/title_tv" />
+
+            <TextView
+                android:id="@+id/textView43"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Entry Fee"
+                app:layout_constraintBottom_toTopOf="@+id/price_tv"
+                app:layout_constraintStart_toStartOf="@+id/price_tv" />
+
+            <ProgressBar
+                android:id="@+id/progressBar2"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:progress="70"
+                android:progressTint="@android:color/holo_orange_dark"
+                android:scaleY="3"
+                app:layout_constraintEnd_toEndOf="@+id/price_tv"
+                app:layout_constraintStart_toStartOf="@+id/title_tv"
+                app:layout_constraintTop_toBottomOf="@+id/title_tv" />
+
+            <TextView
+                android:id="@+id/textView45"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="30% spots left"
+                android:textColor="@android:color/holo_red_light"
+                app:layout_constraintStart_toStartOf="@+id/progressBar2"
+                app:layout_constraintTop_toBottomOf="@+id/progressBar2" />
+
+            <TextView
+                android:id="@+id/textView48"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="100 spots"
+                app:layout_constraintEnd_toEndOf="@+id/progressBar2"
+                app:layout_constraintTop_toBottomOf="@+id/progressBar2" />
+
+            <TextView
+                android:id="@+id/first_prize_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:drawableLeft="@drawable/ic_card_giftcard_24px"
+                android:drawablePadding="10dp"
+                android:text="1st"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="@+id/textView45"
+                app:layout_constraintTop_toBottomOf="@+id/textView45" />
+
+            <TextView
+                android:id="@+id/third_prize_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_card_giftcard_24px"
+                android:drawablePadding="10dp"
+                android:text="3rd"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/first_prize_tv"
+                app:layout_constraintEnd_toEndOf="@+id/progressBar2"
+                app:layout_constraintTop_toTopOf="@+id/first_prize_tv" />
+
+            <TextView
+                android:id="@+id/second_prize_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_card_giftcard_24px"
+                android:drawablePadding="10dp"
+                android:text="2nd"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/first_prize_tv"
+                app:layout_constraintEnd_toStartOf="@+id/third_prize_tv"
+                app:layout_constraintStart_toEndOf="@+id/first_prize_tv"
+                app:layout_constraintTop_toTopOf="@+id/first_prize_tv" />
+
+            <TextView
+                android:id="@+id/date_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="48dp"
+                android:drawableLeft="@drawable/ic_date_range_24px"
+                android:drawablePadding="10dp"
+                android:text="Date"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="@+id/first_prize_tv"
+                app:layout_constraintTop_toBottomOf="@+id/first_prize_tv" />
+
+            <TextView
+                android:id="@+id/duration_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_rotate_left_24px"
+                android:drawablePadding="10dp"
+                android:text="Duration"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/date_tv"
+                app:layout_constraintEnd_toEndOf="@+id/third_prize_tv"
+                app:layout_constraintTop_toTopOf="@+id/date_tv" />
+
+            <TextView
+                android:id="@+id/time_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_schedule_24px"
+                android:drawablePadding="10dp"
+                android:text="Time"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/duration_tv"
+                app:layout_constraintEnd_toStartOf="@+id/duration_tv"
+                app:layout_constraintStart_toEndOf="@+id/date_tv"
+                app:layout_constraintTop_toTopOf="@+id/date_tv" />
+
+            <TextView
+                android:id="@+id/textView56"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:alpha="0.7"
+                android:text="Terms and Conditions :"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="@+id/date_tv"
+                app:layout_constraintTop_toBottomOf="@+id/date_tv" />
+
+            <TextView
+                android:id="@+id/textView57"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:paddingBottom="56dp"
+                android:text="Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book."
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/textView56"
+                app:layout_constraintTop_toBottomOf="@+id/textView56" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/pay_now_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_green_light"
+        android:elevation="0.0dp"
+        android:text="Pay Now"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
