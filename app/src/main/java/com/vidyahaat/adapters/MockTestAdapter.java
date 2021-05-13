@@ -65,7 +65,10 @@ public class MockTestAdapter extends RecyclerView.Adapter<MockTestAdapter.MyView
 
     @Override
     public int getItemCount() {
-        return mockTestDetailsList.size();
+        if (mockTestDetailsList != null) {
+            return mockTestDetailsList.size();
+        }
+        return 0;
     }
 
     public class MyViewHolder extends RecyclerView.ViewHolder {

@@ -107,6 +107,7 @@ public class PaymentActivity extends AppCompatActivity {
                             finish();
                         }
 
+
                         @Override
                         public void clientAuthenticationFailed(String s) {
                             Toast.makeText(getApplicationContext(), s, Toast.LENGTH_LONG).show();
@@ -137,7 +138,8 @@ public class PaymentActivity extends AppCompatActivity {
                         }
                     });
 
-                    transactionManager.setShowPaymentUrl("https://securegw-stage.paytm.in/theia/api/v1/showPaymentPage");
+                    //transactionManager.setShowPaymentUrl("https://securegw-stage.paytm.in/theia/api/v1/showPaymentPage");
+                    transactionManager.setShowPaymentUrl("https://securegw.paytm.in/theia/api/v1/showPaymentPage");
                     transactionManager.setAppInvokeEnabled(false);
                     transactionManager.startTransaction(PaymentActivity.this, 123);
                 }
