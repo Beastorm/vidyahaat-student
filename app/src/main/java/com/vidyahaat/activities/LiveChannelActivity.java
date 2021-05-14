@@ -63,6 +63,12 @@ public class LiveChannelActivity extends AppCompatActivity {
             }
 
             @Override
+            public void onUserJoined(int uid, int elapsed) {
+                super.onUserJoined(uid, elapsed);
+
+            }
+
+            @Override
             // Listen for the onFirstRemoteVideoDecoded callback.
             // This callback occurs when the first video frame of the host is received and decoded after the host successfully joins the channel.
             // You can call the setupRemoteVideo method in this callback to set up the remote video view.
